@@ -90,7 +90,9 @@
 							<div class="container" ng-if="conf.trailer && conf.multimedia_tab >= 1">
 								<div class="gallery-image">
 									<center>
-										<iframe width="100%" height="544px" ng-src="{{conf.youtube}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+										<div style="position:relative; width:100%; height:0px; padding-bottom:56.25%;">
+											<iframe style="position:absolute; left:0; top:0; width:100%; height:100%" width="100%" height="544px" ng-src="{{conf.youtube}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>	
 									</center>
 								</div>
 							</div>
